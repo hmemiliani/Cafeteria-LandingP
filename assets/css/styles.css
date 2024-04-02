@@ -1,0 +1,104 @@
+:root{
+
+    /* Colores */
+    --main-color: #6B240C;
+    --buttons-color: #994D1C;
+    --second-color: #E48F45;
+    --footer-color: #F5CCA0;
+
+}
+html {
+    box-sizing: border-box;
+    
+  }
+
+  body {
+    font-family: "Kay Pho Du", serif;
+    font-style: normal;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(248, 248, 248);
+}
+
+header > .logo-nav{
+    background-color: var(--main-color);
+    
+
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+}
+.logo-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1% 3%;
+
+}
+.logo-nav > .logo > a{
+    font-size: 50px;
+    text-decoration: none;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li:hover {
+    background-color: #444343;
+}
+
+header > .hero{
+    background-image: url(https://images.unsplash.com/photo-1570038283490-0c2b8fe95b2b?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: linear-gradient;
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header > .hero > a{
+    border: #000000 solid 2px;
+    padding: 10px;
+    border-radius: 10%;
+    text-decoration: none;
+    text-emphasis: 10px;
+    color: #000000;
+}
+
+.about-us{
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    height: 60vh;
+    
+}
+
+.about-us > .item-text{
+    padding: 20px;
+    text-wrap: wrap;
+}
+
+.about-us > .item-img > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
